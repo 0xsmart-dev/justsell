@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-gray-600 dark:text-gray-400 bg-white dark:bg-neutral-900 transition-colors duration-300 text-sm md:text-base;
+}
+.m-text-overflow {
+  @apply whitespace-nowrap overflow-hidden text-ellipsis;
+}
+.m-color-transition {
+  @apply transition-colors duration-300;
+}
+
+::-webkit-scrollbar {
+  cursor: pointer;
+  width: 2px;
+  height: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  cursor: pointer;
+  background: #777777;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: #248f32;
+  border-radius: 2px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #17af1f;
+}
